@@ -1,8 +1,6 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import RalipoLogo from '/logo.svg';
-import './App.css';
 import { RalipoProvider } from '.';
+import './App.css';
+import RalipoLogo from '/logo.svg';
 
 function App() {
   return (
