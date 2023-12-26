@@ -13,7 +13,7 @@ export default function useRalipo() {
     }
 
     if (window && window.ralipo) {
-      const { ...rest } = handleRalipoInit()
+      const rest = handleRalipoInit()
       setRalipoObject({ ...rest })
     } else {
       // Retry after 1 second
