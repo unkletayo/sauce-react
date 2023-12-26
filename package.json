@@ -1,7 +1,7 @@
 {
   "name": "sauce-react",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -37,11 +37,16 @@
   "description": "Ralipo React Library",
   "main": "./dist/sauce-react.umd.js",
   "module": "./dist/sauce-react.es.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
-      "import": "./dist/sauce-react.es.js",
-      "require": "./dist/sauce-react.umd.js"
-    }
+      "import": "./dist/ralipo-react.es.js",
+      "require": "./dist/ralipo-react.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
   },
   "repository": {
     "type": "git",
