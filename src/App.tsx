@@ -1,5 +1,5 @@
 import React from 'react'
-import { RalipoProvider } from '.'
+import { RalipoProvider } from './provider/RalipoProvider'
 
 function App() {
   return (

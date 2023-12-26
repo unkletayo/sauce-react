@@ -1,7 +1,16 @@
+import { ReactNode } from 'react';
 /* eslint-disable @typescript-eslint/no-explicit-any */
 export type InitProps = {
   showLauncher?: boolean
   showWidget?: boolean
+}
+
+
+export interface RalipoProviderProps {
+  showWidget?: boolean
+  showLauncher?: boolean
+  apiKey: string
+  children: ReactNode
 }
 
 export type RalipoObject = {
