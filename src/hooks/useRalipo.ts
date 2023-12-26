@@ -3,8 +3,6 @@ import { RalipoObjectWithoutInitialize } from '../@types'
 import { handleRalipoInit } from '../actions/ralipo-actions'
 import useScript from '../lib/scripts'
 
-
-
 export default function useRalipo() {
   const [scriptLoaded, scriptError] = useScript()
   const [ralipoObject, setRalipoObject] = useState<RalipoObjectWithoutInitialize | undefined>(undefined)
@@ -15,7 +13,7 @@ export default function useRalipo() {
     }
 
     if (window && window.ralipo) {
-      const { initialize, ...rest } = handleRalipoInit()
+      const { ...rest } = handleRalipoInit()
       setRalipoObject({ ...rest })
     } else {
       // Retry after 1 second
