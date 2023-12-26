@@ -5,9 +5,10 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   build: {
     lib: {
-      entry: path.resolve("src", 'src/components/index.jsx'),
+      entry: path.resolve("src", 'index.ts'),
       name: 'sauce-react',
-      fileName: (format) => `sauce-react.${format}.js`
+      fileName: (format) => `sauce-react.${format}.js`,
+      formats: ['es', 'umd'],
     },
     rollupOptions: {
       external: ['react', 'react-dom'],
